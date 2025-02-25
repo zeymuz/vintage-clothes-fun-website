@@ -505,11 +505,12 @@ body {
     scroll-snap-align: start;
     object-fit: scale-down;
     
+    
 }
 
 .slider-nav {
     display: flex;
-    column-gap: 1rem;
+    column-gap: 0rem;
     position: absolute;
     bottom: 1.25rem;
     left: 50%;
