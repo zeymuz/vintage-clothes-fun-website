@@ -486,7 +486,7 @@ body {
 .slider {
 
     display: flex;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 10 / 9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -497,15 +497,13 @@ body {
 }
 
 .slider::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in WebKit browsers */
+    display: none; 
 }
 
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: scale-down;
-    
-    
+    object-fit: fill;
 }
 
 .slider-nav {
