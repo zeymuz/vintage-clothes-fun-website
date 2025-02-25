@@ -493,7 +493,7 @@ body {
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
     background-color: #fff;
-    
+    scrollbar-color: black;
 }
 
 
@@ -550,3 +550,28 @@ body {
 }  
 
 /*END OF FOOTER PAGE AREA*/
+
+
+
+/* Target the entire scrollbar */
+::-webkit-scrollbar {
+    height: 8px; /* Adjust scrollbar thickness */
+  }
+  
+  /* Background of the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light gray track */
+    border-radius: 10px;
+  }
+  
+  /* Scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; /* Blue handle */
+    border-radius: 10px;
+  }
+  
+  /* Scrollbar handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #515048; /* brighter on hover */
+  }
+  
