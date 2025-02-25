@@ -564,14 +564,22 @@ body {
     border-radius: 10px;
   }
   
-  /* Scrollbar handle */
-  ::-webkit-scrollbar-thumb {
-    background: black; /* Blue handle */
-    border-radius: 10px;
-  }
-  
   /* Scrollbar handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #515048; /* brighter on hover */
   }
+  
+  /* Force horizontal scrolling */
+html, body {
+    overflow-x: scroll !important;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+
+  
+  ::-webkit-scrollbar-thumb {
+    background: black; /* Blue scrollbar */
+    border-radius: 10px;
+  }
+  
+
   
