@@ -475,7 +475,7 @@ body {
 }
 
 .slider-wrapper  {
-    position: relative;
+    /* position: relative; */
     max-width: 48rem;
     margin: 0 auto;
     padding-top: 1rem;
@@ -487,7 +487,7 @@ body {
     display: flex;
     aspect-ratio: 16 / 9;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
@@ -496,7 +496,7 @@ body {
 
 .slider img {
     flex: 1 0 100%;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     object-fit: scale-down;
     
 }
@@ -535,15 +535,15 @@ body {
 }
 
 .icons .icon-1{
-    padding: 50px 50px;
+    padding: 10px 40px;
 }
 
 .icons .icon-2{
-    padding: 50px 50px;
+    padding: 10px 40px;
 }  
  
 .icons .icon-3{
-    padding: 50px 50px;
+    padding: 10px 40px;
 }  
 
 /*END OF FOOTER PAGE AREA*/
