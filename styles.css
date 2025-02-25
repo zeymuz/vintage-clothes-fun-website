@@ -479,6 +479,7 @@ body {
     max-width: 48rem;
     margin: 0 auto;
     padding-top: 1rem;
+    overflow: hidden;
     
 }
 
@@ -487,16 +488,21 @@ body {
     display: flex;
     aspect-ratio: 16 / 9;
     overflow-x: auto;
-    scroll-snap-type: mandatory;
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
     background-color: #fff;
+    scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
 }
 
 .slider img {
     flex: 1 0 100%;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     object-fit: scale-down;
     
 }
